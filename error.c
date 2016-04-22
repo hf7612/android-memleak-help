@@ -1,5 +1,5 @@
 /*
- * this source file include the error functon 
+ * this source file include the error functon
  */
 #include <errno.h>
 #include <stdarg.h>

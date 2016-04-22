@@ -6,7 +6,7 @@
 /*
  * in <unistd.h> for getopt_long
  */
-extern char *optarg; 
+extern char *optarg;
 extern int optind;
 
 static struct mapinfo* g_mapinfo = NULL;
@@ -16,17 +16,17 @@ static struct result *g_res = NULL;
 
 static void usage()
 {
-    fprintf(stderr, 
+    fprintf(stderr,
         "Usage:\n"
         "\t./leak\n"
         "\t      -m maps file\n"
         "\t      -d diff file\n"
-        "\t      -p prudect name\n"
         "\t      -r root directory\n"
-        "\t      -h help\n"
+        "\t      -a has addr2line cmd\n"
+        "\t      -h show help\n"
         "\n");
 }
-    
+
 static void help()
 {
     usage();
@@ -34,19 +34,21 @@ static void help()
         "Options:\n"
         "\t -m maps file: maps file of the leak process\n"
         "\t -d diff file: diff file befor and after leak.\n"
-        "\t -p: prudect name."
         "\t -r: root directory \n"
+        "\t -a: has addr2line, default is disabled\n"
         "\t example:  \n"
+        "\t\t\t./tt -m maps -d diff -r /mnt/fileroot/baocheng.sun/lollipop/out/target/product/p200/symbols/\n"
         "\t -v: print the version and exit()\n");
 }
+
 
 // Format of /proc/<PID>/maps:
 //   6f000000-6f01e000 rwxp 00000000 00:0c 16389419   /system/lib/libcomposer.so
 static struct mapinfo* parse_maps_line(char* line) {
     uintptr_t start;
     uintptr_t end;
-    uintptr_t offset; 
-    
+    uintptr_t offset;
+
     char permissions[4];
     int name_pos;
     if (sscanf(line, "%" PRIxPTR "-%" PRIxPTR " %4s %" PRIxPTR " %*x:%*x %*d%n", &start,
@@ -63,7 +65,7 @@ static struct mapinfo* parse_maps_line(char* line) {
     if (name_len && name[name_len - 1] == '\n') {
       name_len -= 1;
     }
-  
+
     struct mapinfo* mi = (struct mapinfo *)(calloc(1, sizeof(struct mapinfo) + name_len + 1));
     if (mi) {
       mi->start = start;
@@ -87,11 +89,11 @@ static struct mapinfo* parse_maps(char *maps_file)
     FILE *fp;
     char buffer[2048];
     struct mapinfo *milist = NULL;
-    
+
     if ((fp = fopen(maps_file, "r")) == NULL) {
         err_sys("open file %s error\n", maps_file);
-    } 
-    
+    }
+
     while (fgets(buffer, sizeof(buffer), fp) != NULL) {
         struct mapinfo* mi = parse_maps_line(buffer);
         if (mi) {
@@ -112,17 +114,33 @@ static struct mem* parse_mem_line(char *line)
     struct mem *part = (struct mem *)(calloc(1, sizeof(struct mem) + 1));
 
     p = strtok(line, ",");
-    sscanf(p, "%*s%d", &size);
+
+    if ((s = strstr(p, "size")) != NULL) {
+        s += sizeof("size");
+        for (i = 0; i < strlen(s); i++) {
+            if (!isspace(s[i])) {
+                s += i;
+                break;
+            }
+        }
+        size = atoi(s);
+    }
+
+   // sscanf(p, "%*s%d", &size);
     part->size = size;
 
 
     i = 0;
-    while ((p = strtok(NULL, ",")) != NULL) { 
+    while ((p = strtok(NULL, ",")) != NULL) {
         if (strstr(p, "dup")) {
             sscanf(p, "%*s%d", &part->dup);
          } else {
              sscanf(p, "%" PRIxPTR, &part->addr[i]);
              i++;
+             if (i == FRAMESIZE) {
+                 err_msg("backtrace is more than %d\n", FRAMESIZE);
+                 break;
+             }
          }
     }
     return part;
@@ -133,11 +151,11 @@ static struct mem *parse_diff(char *diff_file)
     FILE *fp;
     char buffer[2048];
     struct mem *mlist = NULL;
-    
+
     if ((fp = fopen(diff_file, "r")) == NULL) {
         err_sys("open file %s error\n", diff_file);
-    } 
-    
+    }
+
     while (fgets(buffer, sizeof(buffer), fp) != NULL) {
         if (!strstr(buffer, "size")  || !strstr(buffer, "dup"))
             continue;
@@ -176,11 +194,11 @@ static int get_result()
         res = (struct result *)(calloc(1, sizeof(struct result)));
         res->m_mem = mem_item;
 
-        for (i = 0; i < 32; i++) { 
+        for (i = 0; i < FRAMESIZE; i++) {
             if (mem_item->addr[i] == 0)
                 break;
 
-            map_item = find_mapinfo(g_mapinfo, mem_item->addr[i]); 
+            map_item = find_mapinfo(g_mapinfo, mem_item->addr[i]);
             if (map_item != NULL) {
                 res->array[i].offset = mem_item->addr[i] - map_item->start;
                 strcpy(res->array[i].name, map_item->name);
@@ -195,6 +213,20 @@ static int get_result()
     return 0;
 }
 
+static void print_item(const struct result *item)
+{
+    int i;
+    if (item == NULL)
+        return;
+
+    printf("size %d, dup %d\n", item->m_mem->size, item->m_mem->dup);
+    for (i = 0; i < 32; i++) {
+        if (item->array[i].offset == 0)
+            break;
+        printf("\t\t%08"PRIxPTR"\t%s\n", item->array[i].offset, item->array[i].name);
+    }
+}
+
 static void addr2line(char *root)
 {
 
@@ -204,16 +236,16 @@ static void addr2line(char *root)
     int pid;
 
     while (res != NULL) {
-        //print_item(res);
+        print_item(res);
         for (i = 0; i < 32; i++) {
             if (res->array[i].offset == 0)
-                break; 
+                break;
 
             sprintf(pc, "%x", res->array[i].offset);
-            sprintf(path, "%s/%s", root, res->array[i].name); 
-            
+            sprintf(path, "%s/%s", root, res->array[i].name);
+
             pid = fork();
-            if (pid == 0) { 
+            if (pid == 0) {
                 execl("./addr2line", "./addr2line", "-e", path, pc, NULL);
             } else if (pid < 0) {
                 printf(" some thing error\n");
@@ -227,20 +259,6 @@ static void addr2line(char *root)
     }
 
 }
-static void print_item(struct result *item)
-{ 
-    int i;
-    if (item == NULL)
-        return;
-
-    printf("size %d, dup %d\n", item->m_mem->size, item->m_mem->dup);
-    for (i = 0; i < 32; i++) {
-        if (item->array[i].offset == 0)
-            break; 
-        printf("\t\t%08"PRIxPTR"\t%s\n", item->array[i].offset, item->array[i].name);
-    }
-}
-
 
 static void print_result()
 {
@@ -267,36 +285,31 @@ static struct result* sort_result(struct result *head)
         tmp = item;
         item = item->next;
 
-        prev = head;
-        now = prev->next;
-        flag = 0;
-        while (now != NULL) { 
-            if (tmp->m_mem->dup < now->m_mem->dup) {
-                prev = now;
-                now = now->next; 
-            } else {
-                tmp->next = now;
-                prev->next = tmp;
-                prev = now;
-                now = now->next;
-                flag = 1;
-                break;
-            }
-        }
-
-        if (flag == 0) {
-            if (head == prev) {
-                if (tmp->m_mem->dup > prev->m_mem->dup) {
-                    tmp->next = prev;
-                    head = tmp;
-                    continue;
+        // tmp is biger
+        if (head->m_mem->dup <= tmp->m_mem->dup) {
+            tmp->next = head;
+            head = tmp;
+        } else {
+            flag = 0;
+            for (now = head; now != NULL; now = now->next) {
+                if (now->m_mem->dup > tmp->m_mem->dup) {
+                    prev = now;
+                } else {
+                    tmp->next = now;
+                    prev->next = tmp;
+                    flag = 1;
+                    break;
                 }
             }
-            prev->next = tmp;
-            tmp->next = NULL;
+
+            // tmp is smallest
+            if (flag == 0) {
+                prev->next = tmp;
+                tmp->next = NULL;
+            }
         }
     }
-        
+
     return head;
 }
 
@@ -334,14 +347,15 @@ int main(int argc, char *argv[])
         {0, 0, NULL, 0}
     };
 
-    char *maps_file, *diff_file, *product_name, *root;
+    char *maps_file, *diff_file, *root;
     FILE *m_fp, *d_fp;
+    int has_addr2line = 0;
 
     if (argc == 1) {
         usage();
         exit(-1);
     } else {
-        while ((c=getopt_long(argc, argv, "d:m:p:r:h", long_opts, &index)) != EOF) {
+        while ((c=getopt_long(argc, argv, "a:d:m:r:h", long_opts, &index)) != EOF) {
             switch (c) {
             case 'm':    /* -m */
                 maps_file = strdup(optarg);
@@ -349,11 +363,11 @@ int main(int argc, char *argv[])
             case 'd':
                 diff_file = strdup(optarg);
                 break;
-            case 'p':
-                product_name = strdup(optarg);
-                break;
             case 'r':
                 root = strdup(optarg);
+                break;
+            case 'a':
+                has_addr2line = 1;
                 break;
             case 'h':    /* fall through to default */
             default:
@@ -368,11 +382,13 @@ int main(int argc, char *argv[])
     get_result();
     g_res = sort_result(g_res);
 
-    print_result();
-#if 0
-    addr2line(root);
-#endif
-    cleanup();
+    //print_result();
 
+    if (has_addr2line)
+        addr2line(root);
+    else
+        print_result();
+
+    cleanup();
     return 0;
 }

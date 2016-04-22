@@ -1,1 +1,8 @@
-./tt -m maps.txt -d head -r /mnt/fileroot/baocheng.sun/lollipop/out/target/product/p301/symbols/
+example
+./tt -m maps -d diff -r /<path>/out/target/product/<product name>/symbols/
+
+
+further update
+pass diff file, create result more readable, like
+
+dup change 000->000,  size change 000->000

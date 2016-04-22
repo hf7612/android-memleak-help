@@ -5,6 +5,8 @@
 #include <getopt.h>
 #include <stdint.h>
 
+#define FRAMESIZE 40
+
 struct mapinfo {
     struct mapinfo* next;
     uintptr_t start;
@@ -23,16 +25,14 @@ struct pc {
 struct result {
     struct result *next;
     struct mem *m_mem;
-    struct pc array[32];
+    struct pc array[FRAMESIZE];
 };
 
 struct mem {
     struct mem *next;
     int size;
     int dup;
-    uintptr_t addr[32];
+    uintptr_t addr[FRAMESIZE];
 };
-
-
 
 

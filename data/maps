@@ -1,0 +1,521 @@
+ab115000-ab118000 r-xp 00000000 b3:0d 266                                /system/bin/mediaserver
+ab118000-ab119000 r--p 00002000 b3:0d 266                                /system/bin/mediaserver
+ab119000-ab11a000 rw-p 00000000 00:00 0 
+ab899000-c3926000 rw-p 00000000 00:00 0                                  [heap]
+eea34000-ef440000 rw-p 00000000 00:00 0                                  [anon:libc_malloc]
+ef440000-ef73d000 rw-s 00000000 00:09 8891                               anon_inode:dmabuf
+ef73d000-efa3a000 rw-s 00000000 00:09 8891                               anon_inode:dmabuf
+efa3a000-efadc000 rw-p 00000000 00:00 0                                  [anon:libc_malloc]
+efb72000-efe6f000 rw-s 00000000 00:09 8891                               anon_inode:dmabuf
+efe6f000-f016c000 rw-s 00000000 00:09 8891                               anon_inode:dmabuf
+f016c000-f026c000 rw-s 00000000 00:04 14464                              /dev/ashmem/AudioFlinger::Client (deleted)
+f0324000-f0621000 rw-s 00000000 00:09 8891                               anon_inode:dmabuf
+f0621000-f091e000 rw-s 00000000 00:09 8891                               anon_inode:dmabuf
+f091e000-f1302000 rw-s 00000000 00:04 17845                              /dev/ashmem/ACodec (deleted)
+f1302000-f1303000 ---p 00000000 00:00 0 
+f1303000-f1400000 rw-p 00000000 00:00 0                                  [stack:4662]
+f1400000-f1401000 ---p 00000000 00:00 0 
+f1401000-f14fe000 rw-p 00000000 00:00 0                                  [stack:4661]
+f14fe000-f14ff000 ---p 00000000 00:00 0 
+f14ff000-f15fc000 rw-p 00000000 00:00 0                                  [stack:4660]
+f15fc000-f15fd000 ---p 00000000 00:00 0 
+f15fd000-f16fa000 rw-p 00000000 00:00 0                                  [stack:4659]
+f16fa000-f16fb000 ---p 00000000 00:00 0 
+f16fb000-f17f8000 rw-p 00000000 00:00 0                                  [stack:4658]
+f17f8000-f17fa000 r-xp 00000000 b3:0d 935                                /system/lib/libfbcnf.so
+f17fa000-f17fb000 r--p 00001000 b3:0d 935                                /system/lib/libfbcnf.so
+f17fb000-f17fc000 rw-p 00002000 b3:0d 935                                /system/lib/libfbcnf.so
+f17fc000-f1801000 r-xp 00000000 b3:0d 842                                /system/lib/libGLESv1_CM.so
+f1801000-f1802000 r--p 00004000 b3:0d 842                                /system/lib/libGLESv1_CM.so
+f1802000-f1803000 rw-p 00005000 b3:0d 842                                /system/lib/libGLESv1_CM.so
+f1835000-f187d000 rw-s 00000000 00:04 20019                              /dev/ashmem/ACodec (deleted)
+f187d000-f18dc000 r-xp 00000000 b3:0d 1080                               /system/lib/libstagefright_soft_dcvdec.so
+f18dc000-f18dd000 ---p 00000000 00:00 0 
+f18dd000-f18de000 r--p 0005f000 b3:0d 1080                               /system/lib/libstagefright_soft_dcvdec.so
+f18de000-f18df000 rw-p 00060000 b3:0d 1080                               /system/lib/libstagefright_soft_dcvdec.so
+f18df000-f18e0000 ---p 00000000 00:00 0 
+f18e0000-f19dd000 rw-p 00000000 00:00 0                                  [stack:4657]
+f19dd000-f19de000 ---p 00000000 00:00 0 
+f19de000-f1adb000 rw-p 00000000 00:00 0                                  [stack:4656]
+f1adb000-f1adc000 ---p 00000000 00:00 0 
+f1adc000-f1bd9000 rw-p 00000000 00:00 0                                  [stack:4655]
+f1bd9000-f1bda000 ---p 00000000 00:00 0 
+f1bda000-f1cd7000 rw-p 00000000 00:00 0                                  [stack:4654]
+f24e5000-f24e6000 ---p 00000000 00:00 0 
+f24e6000-f25e3000 rw-p 00000000 00:00 0                                  [stack:5034]
+f25e3000-f27e4000 rw-p 00000000 00:00 0                                  [anon:libc_malloc]
+f27e4000-f27e5000 ---p 00000000 00:00 0 
+f27e5000-f28e2000 rw-p 00000000 00:00 0                                  [stack:4673]
+f28e2000-f28e3000 ---p 00000000 00:00 0 
+f28e3000-f29e0000 rw-p 00000000 00:00 0                                  [stack:4672]
+f29e0000-f29e1000 ---p 00000000 00:00 0 
+f29e1000-f2ade000 rw-p 00000000 00:00 0                                  [stack:4651]
+f2ade000-f2adf000 ---p 00000000 00:00 0 
+f2adf000-f2bdc000 rw-p 00000000 00:00 0                                  [stack:4649]
+f2bdc000-f2bdf000 r-xp 00000000 b3:0d 828                                /system/lib/hw/gralloc.amlogic.so
+f2bdf000-f2be0000 r--p 00002000 b3:0d 828                                /system/lib/hw/gralloc.amlogic.so
+f2be0000-f2be1000 rw-p 00003000 b3:0d 828                                /system/lib/hw/gralloc.amlogic.so
+f2c0b000-f2c7e000 rw-p 00000000 00:00 0                                  [anon:libc_malloc]
+f2c7e000-f2c82000 rw-p 00000000 00:00 0 
+f2c82000-f2c92000 rw-s 00000000 00:04 20018                              /dev/ashmem/ACodec (deleted)
+f2c92000-f2cae000 rw-p 00000000 00:00 0 
+f2cae000-f2caf000 ---p 00000000 00:00 0 
+f2caf000-f2dac000 rw-p 00000000 00:00 0                                  [stack:4648]
+f2dac000-f2dad000 ---p 00000000 00:00 0 
+f2dad000-f2eaa000 rw-p 00000000 00:00 0                                  [stack:4653]
+f2eaa000-f38bb000 rw-p 00000000 00:00 0                                  [anon:libc_malloc]
+f38bb000-f38bc000 r-xp 00000000 b3:0d 1122                               /system/lib/libthreadworker_alt.so
+f38bc000-f38bd000 r--p 00000000 b3:0d 1122                               /system/lib/libthreadworker_alt.so
+f38bd000-f38be000 rw-p 00001000 b3:0d 1122                               /system/lib/libthreadworker_alt.so
+f38be000-f38c0000 r-xp 00000000 b3:0d 1013                               /system/lib/libomx_worker_peer_alt.so
+f38c0000-f38c1000 r--p 00001000 b3:0d 1013                               /system/lib/libomx_worker_peer_alt.so
+f38c1000-f38c2000 rw-p 00002000 b3:0d 1013                               /system/lib/libomx_worker_peer_alt.so
+f38c2000-f38c4000 r-xp 00000000 b3:0d 1012                               /system/lib/libomx_timed_task_queue_alt.so
+f38c4000-f38c5000 r--p 00001000 b3:0d 1012                               /system/lib/libomx_timed_task_queue_alt.so
+f38c5000-f38c6000 rw-p 00002000 b3:0d 1012                               /system/lib/libomx_timed_task_queue_alt.so
+f38c6000-f38d9000 r-xp 00000000 b3:0d 1011                               /system/lib/libomx_framework_alt.so
+f38d9000-f38da000 ---p 00000000 00:00 0 
+f38da000-f38db000 r--p 00013000 b3:0d 1011                               /system/lib/libomx_framework_alt.so
+f38db000-f38dc000 rw-p 00014000 b3:0d 1011                               /system/lib/libomx_framework_alt.so
+f38dc000-f38de000 r-xp 00000000 b3:0d 1010                               /system/lib/libomx_clock_utils_alt.so
+f38de000-f38df000 r--p 00001000 b3:0d 1010                               /system/lib/libomx_clock_utils_alt.so
+f38df000-f38e0000 rw-p 00002000 b3:0d 1010                               /system/lib/libomx_clock_utils_alt.so
+f38e0000-f38e2000 r-xp 00000000 b3:0d 1009                               /system/lib/libomx_av_core_alt.so
+f38e2000-f38e3000 r--p 00001000 b3:0d 1009                               /system/lib/libomx_av_core_alt.so
+f38e3000-f38e4000 rw-p 00002000 b3:0d 1009                               /system/lib/libomx_av_core_alt.so
+f38e4000-f38e5000 r--p 00000000 00:00 0                                  [anon:linker_alloc]
+f38e5000-f38e6000 r-xp 00000000 b3:0d 942                                /system/lib/libfpscalculator_alt.so
+f38e6000-f38e7000 r--p 00000000 b3:0d 942                                /system/lib/libfpscalculator_alt.so
+f38e7000-f38e8000 rw-p 00001000 b3:0d 942                                /system/lib/libfpscalculator_alt.so
+f38e8000-f38e9000 r-xp 00000000 b3:0d 913                                /system/lib/libdatachunkqueue_alt.so
+f38e9000-f38ea000 r--p 00000000 b3:0d 913                                /system/lib/libdatachunkqueue_alt.so
+f38ea000-f38eb000 rw-p 00001000 b3:0d 913                                /system/lib/libdatachunkqueue_alt.so
+f38eb000-f3927000 r-xp 00000000 b3:0d 849                                /system/lib/libOmxVideo.so
+f3927000-f3928000 ---p 00000000 00:00 0 
+f3928000-f392a000 r--p 0003c000 b3:0d 849                                /system/lib/libOmxVideo.so
+f392a000-f392c000 rw-p 0003e000 b3:0d 849                                /system/lib/libOmxVideo.so
+f392c000-f392d000 rw-p 00000000 00:00 0 
+f392d000-f3934000 r-xp 00000000 b3:0d 847                                /system/lib/libOmxBase.so
+f3934000-f3935000 r--p 00006000 b3:0d 847                                /system/lib/libOmxBase.so
+f3935000-f3936000 rw-p 00007000 b3:0d 847                                /system/lib/libOmxBase.so
+f3936000-f3939000 r-xp 00000000 b3:0d 848                                /system/lib/libOmxCore.so
+f3939000-f393a000 r--p 00002000 b3:0d 848                                /system/lib/libOmxCore.so
+f393a000-f393b000 rw-p 00003000 b3:0d 848                                /system/lib/libOmxCore.so
+f393b000-f393d000 r-xp 00000000 b3:0d 1104                               /system/lib/libstagefrighthw.so
+f393d000-f393e000 r--p 00001000 b3:0d 1104                               /system/lib/libstagefrighthw.so
+f393e000-f393f000 rw-p 00002000 b3:0d 1104                               /system/lib/libstagefrighthw.so
+f393f000-f3a3f000 rw-s 00000000 00:04 17640                              /dev/ashmem/AudioFlinger::Client (deleted)
+f3a3f000-f3a41000 rw-p 00000000 00:00 0 
+f3a41000-f3a42000 ---p 00000000 00:00 0 
+f3a42000-f3b3f000 rw-p 00000000 00:00 0                                  [stack:4030]
+f3b3f000-f3b41000 rw-p 00000000 00:00 0 
+f3b41000-f3b42000 ---p 00000000 00:00 0 
+f3b42000-f3c3f000 rw-p 00000000 00:00 0                                  [stack:4028]
+f3c3f000-f3c41000 rw-p 00000000 00:00 0 
+f3c41000-f3c42000 ---p 00000000 00:00 0 
+f3c42000-f3d3f000 rw-p 00000000 00:00 0                                  [stack:4027]
+f3d3f000-f3e3f000 rw-s 00000000 00:04 11581                              /dev/ashmem/MemoryHeapBase (deleted)
+f3e3f000-f3e41000 rw-p 00000000 00:00 0 
+f3e41000-f3e42000 ---p 00000000 00:00 0 
+f3e42000-f3f3f000 rw-p 00000000 00:00 0                                  [stack:3151]
+f3f3f000-f3f41000 rw-p 00000000 00:00 0 
+f3f41000-f3f42000 ---p 00000000 00:00 0 
+f3f42000-f403f000 rw-p 00000000 00:00 0                                  [stack:3150]
+f403f000-f4041000 rw-p 00000000 00:00 0 
+f4041000-f4042000 ---p 00000000 00:00 0 
+f4042000-f413f000 rw-p 00000000 00:00 0                                  [stack:3149]
+f413f000-f4142000 rw-s 00000000 00:04 12379                              /dev/ashmem/ScreenSource (deleted)
+f4142000-f4148000 r-xp 00000000 b3:0d 973                                /system/lib/libiscreenmediasource.so
+f4148000-f4149000 ---p 00000000 00:00 0 
+f4149000-f414b000 r--p 00006000 b3:0d 973                                /system/lib/libiscreenmediasource.so
+f414b000-f414c000 rw-p 00008000 b3:0d 973                                /system/lib/libiscreenmediasource.so
+f414c000-f4152000 r-xp 00000000 b3:0d 1066                               /system/lib/libstagefright_screenmediasource.so
+f4152000-f4153000 ---p 00000000 00:00 0 
+f4153000-f4154000 r--p 00006000 b3:0d 1066                               /system/lib/libstagefright_screenmediasource.so
+f4154000-f4155000 rw-p 00007000 b3:0d 1066                               /system/lib/libstagefright_screenmediasource.so
+f4155000-f415d000 r-xp 00000000 b3:0d 807                                /system/lib/amplayer/libcurl_mod.so
+f415d000-f415e000 r--p 00007000 b3:0d 807                                /system/lib/amplayer/libcurl_mod.so
+f415e000-f415f000 rw-p 00008000 b3:0d 807                                /system/lib/amplayer/libcurl_mod.so
+f415f000-f4213000 r-xp 00000000 b3:0d 808                                /system/lib/amplayer/libdash_mod.so
+f4213000-f421b000 r--p 000b3000 b3:0d 808                                /system/lib/amplayer/libdash_mod.so
+f421b000-f421c000 rw-p 000bb000 b3:0d 808                                /system/lib/amplayer/libdash_mod.so
+f421d000-f4237000 r-xp 00000000 b3:0d 810                                /system/lib/amplayer/libvhls_mod.so
+f4237000-f4238000 r--p 00019000 b3:0d 810                                /system/lib/amplayer/libvhls_mod.so
+f4238000-f4239000 rw-p 0001a000 b3:0d 810                                /system/lib/amplayer/libvhls_mod.so
+f4239000-f423d000 r-xp 00000000 b3:0d 1113                               /system/lib/libsub_xsub.so
+f423d000-f423e000 r--p 00003000 b3:0d 1113                               /system/lib/libsub_xsub.so
+f423e000-f423f000 rw-p 00004000 b3:0d 1113                               /system/lib/libsub_xsub.so
+f423f000-f4240000 r--p 00000000 00:00 0                                  [anon:linker_alloc]
+f4240000-f4244000 r-xp 00000000 b3:0d 1112                               /system/lib/libsub_vob.so
+f4244000-f4245000 r--p 00003000 b3:0d 1112                               /system/lib/libsub_vob.so
+f4245000-f4246000 rw-p 00004000 b3:0d 1112                               /system/lib/libsub_vob.so
+f4246000-f4249000 r-xp 00000000 b3:0d 1111                               /system/lib/libsub_text.so
+f4249000-f424a000 r--p 00002000 b3:0d 1111                               /system/lib/libsub_text.so
+f424a000-f424b000 rw-p 00003000 b3:0d 1111                               /system/lib/libsub_text.so
+f424b000-f424f000 r-xp 00000000 b3:0d 1110                               /system/lib/libsub_pgs.so
+f424f000-f4250000 r--p 00003000 b3:0d 1110                               /system/lib/libsub_pgs.so
+f4250000-f4251000 rw-p 00004000 b3:0d 1110                               /system/lib/libsub_pgs.so
+f4251000-f4257000 r-xp 00000000 b3:0d 1109                               /system/lib/libsub_idxsub.so
+f4257000-f4258000 r--p 00005000 b3:0d 1109                               /system/lib/libsub_idxsub.so
+f4258000-f4259000 rw-p 00006000 b3:0d 1109                               /system/lib/libsub_idxsub.so
+f4259000-f4260000 r-xp 00000000 b3:0d 1108                               /system/lib/libsub_dvb.so
+f4260000-f4261000 r--p 00006000 b3:0d 1108                               /system/lib/libsub_dvb.so
+f4261000-f4262000 rw-p 00007000 b3:0d 1108                               /system/lib/libsub_dvb.so
+f4262000-f4265000 r-xp 00000000 b3:0d 1107                               /system/lib/libsub_ass.so
+f4265000-f4266000 r--p 00002000 b3:0d 1107                               /system/lib/libsub_ass.so
+f4266000-f4267000 rw-p 00003000 b3:0d 1107                               /system/lib/libsub_ass.so
+f4267000-f4269000 r-xp 00000000 b3:0d 871                                /system/lib/libamsubdec.so
+f4269000-f426a000 r--p 00001000 b3:0d 871                                /system/lib/libamsubdec.so
+f426a000-f426b000 rw-p 00002000 b3:0d 871                                /system/lib/libamsubdec.so
+f426b000-f42b7000 r-xp 00000000 b3:0d 911                                /system/lib/libcurl.so
+f42b7000-f42b9000 r--p 0004b000 b3:0d 911                                /system/lib/libcurl.so
+f42b9000-f42ba000 rw-p 0004d000 b3:0d 911                                /system/lib/libcurl.so
+f42ba000-f42bf000 r-xp 00000000 b3:0d 1120                               /system/lib/libsystemcontrolservice.so
+f42bf000-f42c1000 r--p 00004000 b3:0d 1120                               /system/lib/libsystemcontrolservice.so
+f42c1000-f42c2000 rw-p 00006000 b3:0d 1120                               /system/lib/libsystemcontrolservice.so
+f42c2000-f42c4000 r-xp 00000000 b3:0d 873                                /system/lib/libamvdec.so
+f42c4000-f42c5000 r--p 00001000 b3:0d 873                                /system/lib/libamvdec.so
+f42c5000-f42c6000 rw-p 00002000 b3:0d 873                                /system/lib/libamvdec.so
+f42c6000-f42ca000 r-xp 00000000 b3:0d 872                                /system/lib/libamthumbnail.so
+f42ca000-f42cb000 r--p 00003000 b3:0d 872                                /system/lib/libamthumbnail.so
+f42cb000-f42cc000 rw-p 00004000 b3:0d 872                                /system/lib/libamthumbnail.so
+f42cc000-f48ec000 r-xp 00000000 b3:0d 868                                /system/lib/libamplayer.so
+f48ec000-f48fb000 r--p 0061f000 b3:0d 868                                /system/lib/libamplayer.so
+f48fb000-f490e000 rw-p 0062e000 b3:0d 868                                /system/lib/libamplayer.so
+f490e000-f4f23000 rw-p 00000000 00:00 0 
+f4f23000-f4f24000 r--p 00000000 00:00 0                                  [anon:linker_alloc]
+f4f24000-f4fa0000 r-xp 00000000 b3:0d 867                                /system/lib/libamnuplayer.so
+f4fa0000-f4fa1000 ---p 00000000 00:00 0 
+f4fa1000-f4fa5000 r--p 0007c000 b3:0d 867                                /system/lib/libamnuplayer.so
+f4fa5000-f4fa6000 rw-p 00080000 b3:0d 867                                /system/lib/libamnuplayer.so
+f4fa6000-f4fb1000 r-xp 00000000 b3:0d 863                                /system/lib/libamavutils.so
+f4fb1000-f4fb2000 r--p 0000a000 b3:0d 863                                /system/lib/libamavutils.so
+f4fb2000-f4fb3000 rw-p 0000b000 b3:0d 863                                /system/lib/libamavutils.so
+f4fb3000-f4fd8000 r-xp 00000000 b3:0d 992                                /system/lib/libmedia_amlogic.so
+f4fd8000-f4fd9000 ---p 00000000 00:00 0 
+f4fd9000-f4fdb000 r--p 00025000 b3:0d 992                                /system/lib/libmedia_amlogic.so
+f4fdb000-f4fdc000 rw-p 00027000 b3:0d 992                                /system/lib/libmedia_amlogic.so
+f4fdc000-f50dc000 rw-s 00000000 00:04 9795                               /dev/ashmem/SoundTriggerHwService (deleted)
+f50dc000-f50de000 rw-p 00000000 00:00 0 
+f50de000-f50df000 ---p 00000000 00:00 0 
+f50df000-f51dc000 rw-p 00000000 00:00 0                                  [stack:3145]
+f51dc000-f521d000 rw-p 00000000 00:00 0                                  [anon:libc_malloc]
+f521d000-f521f000 rw-p 00000000 00:00 0 
+f521f000-f5220000 ---p 00000000 00:00 0 
+f5220000-f531d000 rw-p 00000000 00:00 0                                  [stack:3144]
+f531d000-f535e000 rw-p 00000000 00:00 0                                  [anon:libc_malloc]
+f535e000-f5363000 r-xp 00000000 b3:0d 821                                /system/lib/hw/audio.hdmi.amlogic.so
+f5363000-f5364000 r--p 00004000 b3:0d 821                                /system/lib/hw/audio.hdmi.amlogic.so
+f5364000-f5365000 rw-p 00005000 b3:0d 821                                /system/lib/hw/audio.hdmi.amlogic.so
+f5365000-f538e000 rw-p 00000000 00:00 0                                  [anon:libc_malloc]
+f538e000-f5393000 r-xp 00000000 b3:0d 824                                /system/lib/hw/audio.r_submix.default.so
+f5393000-f5394000 r--p 00004000 b3:0d 824                                /system/lib/hw/audio.r_submix.default.so
+f5394000-f5395000 rw-p 00005000 b3:0d 824                                /system/lib/hw/audio.r_submix.default.so
+f5395000-f5399000 r-xp 00000000 b3:0d 825                                /system/lib/hw/audio.usb.default.so
+f5399000-f539a000 r--p 00003000 b3:0d 825                                /system/lib/hw/audio.usb.default.so
+f539a000-f539b000 rw-p 00004000 b3:0d 825                                /system/lib/hw/audio.usb.default.so
+f539b000-f539d000 rw-p 00000000 00:00 0 
+f539d000-f539e000 ---p 00000000 00:00 0 
+f539e000-f549b000 rw-p 00000000 00:00 0                                  [stack:3141]
+f549b000-f549d000 r-xp 00000000 b3:0d 1147                               /system/lib/soundfx/libldnhncr.so
+f549d000-f549e000 r--p 00001000 b3:0d 1147                               /system/lib/soundfx/libldnhncr.so
+f549e000-f549f000 rw-p 00002000 b3:0d 1147                               /system/lib/soundfx/libldnhncr.so
+f549f000-f54a1000 r-xp 00000000 b3:0d 1145                               /system/lib/soundfx/libdownmix.so
+f54a1000-f54a2000 r--p 00001000 b3:0d 1145                               /system/lib/soundfx/libdownmix.so
+f54a2000-f54a3000 rw-p 00002000 b3:0d 1145                               /system/lib/soundfx/libdownmix.so
+f54a3000-f54a4000 r-xp 00000000 b3:0d 1149                               /system/lib/soundfx/libvisualizer.so
+f54a4000-f54a5000 ---p 00000000 00:00 0 
+f54a5000-f54a6000 r--p 00001000 b3:0d 1149                               /system/lib/soundfx/libvisualizer.so
+f54a6000-f54a7000 rw-p 00002000 b3:0d 1149                               /system/lib/soundfx/libvisualizer.so
+f54a7000-f54ad000 r-xp 00000000 b3:0d 1148                               /system/lib/soundfx/libreverbwrapper.so
+f54ad000-f54ae000 r--p 00005000 b3:0d 1148                               /system/lib/soundfx/libreverbwrapper.so
+f54ae000-f54af000 rw-p 00006000 b3:0d 1148                               /system/lib/soundfx/libreverbwrapper.so
+f54af000-f54bc000 r-xp 00000000 b3:0d 1144                               /system/lib/soundfx/libbundlewrapper.so
+f54bc000-f54bd000 r--p 0000c000 b3:0d 1144                               /system/lib/soundfx/libbundlewrapper.so
+f54bd000-f54be000 rw-p 0000d000 b3:0d 1144                               /system/lib/soundfx/libbundlewrapper.so
+f54be000-f54bf000 r-xp 00000000 b3:0d 832                                /system/lib/hw/local_time.default.so
+f54bf000-f54c0000 r--p 00000000 b3:0d 832                                /system/lib/hw/local_time.default.so
+f54c0000-f54c1000 rw-p 00001000 b3:0d 832                                /system/lib/hw/local_time.default.so
+f54c1000-f54c2000 r--p 00000000 00:00 0                                  [anon:linker_alloc]
+f54c2000-f5503000 rw-p 00000000 00:00 0                                  [anon:libc_malloc]
+f5503000-f5504000 r--p 00000000 00:00 0                                  [anon:linker_alloc]
+f5504000-f5508000 r-xp 00000000 b3:0d 1124                               /system/lib/libtinyalsa.so
+f5508000-f5509000 r--p 00003000 b3:0d 1124                               /system/lib/libtinyalsa.so
+f5509000-f550a000 rw-p 00004000 b3:0d 1124                               /system/lib/libtinyalsa.so
+f550a000-f550c000 r-xp 00000000 b3:0d 889                                /system/lib/libaudioroute.so
+f550c000-f550d000 r--p 00001000 b3:0d 889                                /system/lib/libaudioroute.so
+f550d000-f550e000 rw-p 00002000 b3:0d 889                                /system/lib/libaudioroute.so
+f550e000-f5512000 r-xp 00000000 b3:0d 822                                /system/lib/hw/audio.primary.amlogic.so
+f5512000-f5513000 r--p 00003000 b3:0d 822                                /system/lib/hw/audio.primary.amlogic.so
+f5513000-f5514000 rw-p 00004000 b3:0d 822                                /system/lib/hw/audio.primary.amlogic.so
+f5514000-f5518000 rw-p 00000000 00:00 0 
+f5518000-f5519000 ---p 00000000 00:00 0 
+f5519000-f5616000 rw-p 00000000 00:00 0                                  [stack:3140]
+f5616000-f5617000 ---p 00000000 00:00 0 
+f5617000-f5714000 rw-p 00000000 00:00 0                                  [stack:3139]
+f5714000-f5716000 rw-p 00000000 00:00 0 
+f5716000-f5717000 ---p 00000000 00:00 0 
+f5717000-f5814000 rw-p 00000000 00:00 0                                  [stack:3138]
+f5814000-f5816000 rw-p 00000000 00:00 0 
+f5816000-f5817000 ---p 00000000 00:00 0 
+f5817000-f5914000 rw-p 00000000 00:00 0                                  [stack:3137]
+f5914000-f591d000 r-xp 00000000 b3:0d 976                                /system/lib/libjhead.so
+f591d000-f591e000 r--p 00008000 b3:0d 976                                /system/lib/libjhead.so
+f591e000-f591f000 rw-p 00009000 b3:0d 976                                /system/lib/libjhead.so
+f591f000-f5920000 rw-p 00000000 00:00 0 
+f5920000-f5921000 r-xp 00000000 b3:0d 969                                /system/lib/libion.so
+f5921000-f5922000 r--p 00000000 b3:0d 969                                /system/lib/libion.so
+f5922000-f5923000 rw-p 00001000 b3:0d 969                                /system/lib/libion.so
+f5923000-f595e000 r-xp 00000000 b3:0d 827                                /system/lib/hw/camera.amlogic.so
+f595e000-f595f000 ---p 00000000 00:00 0 
+f595f000-f5961000 r--p 0003b000 b3:0d 827                                /system/lib/hw/camera.amlogic.so
+f5961000-f5962000 rw-p 0003d000 b3:0d 827                                /system/lib/hw/camera.amlogic.so
+f5962000-f5a60000 r--p 00000000 00:10 11033                              /dev/binder
+f5a60000-f5a70000 r-xp 00000000 b3:0d 866                                /system/lib/libamffmpegadapter.so
+f5a70000-f5a71000 ---p 00000000 00:00 0 
+f5a71000-f5a72000 r--p 00010000 b3:0d 866                                /system/lib/libamffmpegadapter.so
+f5a72000-f5a73000 rw-p 00011000 b3:0d 866                                /system/lib/libamffmpegadapter.so
+f5a73000-f5a74000 r--p 00000000 00:00 0                                  [anon:linker_alloc]
+f5a74000-f5a98000 r-xp 00000000 b3:0d 899                                /system/lib/libc_malloc_debug_leak.so
+f5a98000-f5a99000 ---p 00000000 00:00 0 
+f5a99000-f5a9a000 r--p 00024000 b3:0d 899                                /system/lib/libc_malloc_debug_leak.so
+f5a9a000-f5a9b000 rw-p 00025000 b3:0d 899                                /system/lib/libc_malloc_debug_leak.so
+f5a9b000-f5abb000 r--s 00000000 00:10 1735                               /dev/__properties__
+f5abb000-f5b29000 r-xp 00000000 b3:0d 841                                /system/lib/libGLES_trace.so
+f5b29000-f5b2a000 ---p 00000000 00:00 0 
+f5b2a000-f5b2c000 r--p 0006e000 b3:0d 841                                /system/lib/libGLES_trace.so
+f5b2c000-f5b2d000 rw-p 00070000 b3:0d 841                                /system/lib/libGLES_trace.so
+f5b2d000-f5b2f000 r-xp 00000000 b3:0d 1126                               /system/lib/libunwind-ptrace.so
+f5b2f000-f5b30000 r--p 00001000 b3:0d 1126                               /system/lib/libunwind-ptrace.so
+f5b30000-f5b31000 rw-p 00002000 b3:0d 1126                               /system/lib/libunwind-ptrace.so
+f5b31000-f5b3d000 r-xp 00000000 b3:0d 1127                               /system/lib/libunwind.so
+f5b3d000-f5b3e000 r--p 0000b000 b3:0d 1127                               /system/lib/libunwind.so
+f5b3e000-f5b3f000 rw-p 0000c000 b3:0d 1127                               /system/lib/libunwind.so
+f5b3f000-f5b85000 rw-p 00000000 00:00 0 
+f5b85000-f5b89000 r-xp 00000000 b3:0d 946                                /system/lib/libgccdemangle.so
+f5b89000-f5b8a000 ---p 00000000 00:00 0 
+f5b8a000-f5b8b000 r--p 00004000 b3:0d 946                                /system/lib/libgccdemangle.so
+f5b8b000-f5b8c000 rw-p 00005000 b3:0d 946                                /system/lib/libgccdemangle.so
+f5b8c000-f5b8d000 r--p 00000000 00:00 0                                  [anon:linker_alloc]
+f5b8d000-f5ba2000 r-xp 00000000 b3:0d 1141                               /system/lib/libz.so
+f5ba2000-f5ba3000 r--p 00014000 b3:0d 1141                               /system/lib/libz.so
+f5ba3000-f5ba4000 rw-p 00015000 b3:0d 1141                               /system/lib/libz.so
+f5ba4000-f5ba6000 r-xp 00000000 b3:0d 1103                               /system/lib/libstagefright_yuv.so
+f5ba6000-f5ba7000 r--p 00001000 b3:0d 1103                               /system/lib/libstagefright_yuv.so
+f5ba7000-f5ba8000 rw-p 00002000 b3:0d 1103                               /system/lib/libstagefright_yuv.so
+f5ba8000-f5ba9000 r-xp 00000000 b3:0d 1059                               /system/lib/libstagefright_enc_common.so
+f5ba9000-f5baa000 r--p 00000000 b3:0d 1059                               /system/lib/libstagefright_enc_common.so
+f5baa000-f5bab000 rw-p 00001000 b3:0d 1059                               /system/lib/libstagefright_enc_common.so
+f5bab000-f5bb0000 r-xp 00000000 b3:0d 1058                               /system/lib/libstagefright_avc_common.so
+f5bb0000-f5bb1000 r--p 00004000 b3:0d 1058                               /system/lib/libstagefright_avc_common.so
+f5bb1000-f5bb2000 rw-p 00005000 b3:0d 1058                               /system/lib/libstagefright_avc_common.so
+f5bb2000-f5bed000 r-xp 00000000 b3:0d 1055                               /system/lib/libssl.so
+f5bed000-f5bf0000 r--p 0003a000 b3:0d 1055                               /system/lib/libssl.so
+f5bf0000-f5bf3000 rw-p 0003d000 b3:0d 1055                               /system/lib/libssl.so
+f5bf3000-f5c2b000 r-xp 00000000 b3:0d 1016                               /system/lib/libopus.so
+f5c2b000-f5c2c000 r--p 00037000 b3:0d 1016                               /system/lib/libopus.so
+f5c2c000-f5c2d000 rw-p 00038000 b3:0d 1016                               /system/lib/libopus.so
+f5c2d000-f5c2e000 r-xp 00000000 b3:0d 1004                               /system/lib/libnetd_client.so
+f5c2e000-f5c2f000 ---p 00000000 00:00 0 
+f5c2f000-f5c30000 r--p 00001000 b3:0d 1004                               /system/lib/libnetd_client.so
+f5c30000-f5c31000 rw-p 00002000 b3:0d 1004                               /system/lib/libnetd_client.so
+f5c31000-f6301000 r-xp 00000000 b3:0d 865                                /system/lib/libamffmpeg.so
+f6301000-f631d000 r--p 006cf000 b3:0d 865                                /system/lib/libamffmpeg.so
+f631d000-f6332000 rw-p 006eb000 b3:0d 865                                /system/lib/libamffmpeg.so
+f6332000-f68c5000 rw-p 00000000 00:00 0 
+f68c5000-f68c6000 r--p 00000000 00:00 0 
+f68c6000-f68ca000 r-xp 00000000 b3:0d 945                                /system/lib/libgabi++.so
+f68ca000-f68cb000 r--p 00003000 b3:0d 945                                /system/lib/libgabi++.so
+f68cb000-f68cc000 rw-p 00004000 b3:0d 945                                /system/lib/libgabi++.so
+f68cc000-f68d5000 r-xp 00000000 b3:0d 843                                /system/lib/libGLESv2.so
+f68d5000-f68d6000 r--p 00008000 b3:0d 843                                /system/lib/libGLESv2.so
+f68d6000-f68d7000 rw-p 00009000 b3:0d 843                                /system/lib/libGLESv2.so
+f68d7000-f6934000 r-xp 00000000 b3:0d 838                                /system/lib/libEGL.so
+f6934000-f6936000 r--p 0005c000 b3:0d 838                                /system/lib/libEGL.so
+f6936000-f693f000 rw-p 0005e000 b3:0d 838                                /system/lib/libEGL.so
+f693f000-f6942000 rw-p 00000000 00:00 0 
+f6942000-f6963000 r-xp 00000000 b3:0d 886                                /system/lib/libaudiopolicymanagerdefault.so
+f6963000-f6964000 ---p 00000000 00:00 0 
+f6964000-f6966000 r--p 00021000 b3:0d 886                                /system/lib/libaudiopolicymanagerdefault.so
+f6966000-f6967000 rw-p 00023000 b3:0d 886                                /system/lib/libaudiopolicymanagerdefault.so
+f6967000-f6968000 r--p 00000000 00:00 0                                  [anon:linker_alloc]
+f6968000-f696b000 r-xp 00000000 b3:0d 1140                               /system/lib/libwpa_client.so
+f696b000-f696c000 r--p 00002000 b3:0d 1140                               /system/lib/libwpa_client.so
+f696c000-f696d000 rw-p 00003000 b3:0d 1140                               /system/lib/libwpa_client.so
+f696d000-f6972000 r-xp 00000000 b3:0d 1006                               /system/lib/libnetutils.so
+f6972000-f6973000 r--p 00004000 b3:0d 1006                               /system/lib/libnetutils.so
+f6973000-f6974000 rw-p 00005000 b3:0d 1006                               /system/lib/libnetutils.so
+f6974000-f6978000 r-xp 00000000 b3:0d 1051                               /system/lib/libspeexresampler.so
+f6978000-f6979000 r--p 00003000 b3:0d 1051                               /system/lib/libspeexresampler.so
+f6979000-f697a000 rw-p 00004000 b3:0d 1051                               /system/lib/libspeexresampler.so
+f697a000-f69b1000 r-xp 00000000 b3:0d 1106                               /system/lib/libstlport.so
+f69b1000-f69b4000 r--p 00036000 b3:0d 1106                               /system/lib/libstlport.so
+f69b4000-f69b5000 rw-p 00039000 b3:0d 1106                               /system/lib/libstlport.so
+f69b5000-f69bb000 r-xp 00000000 b3:0d 891                                /system/lib/libbacktrace.so
+f69bb000-f69bc000 ---p 00000000 00:00 0 
+f69bc000-f69bd000 r--p 00006000 b3:0d 891                                /system/lib/libbacktrace.so
+f69bd000-f69be000 rw-p 00007000 b3:0d 891                                /system/lib/libbacktrace.so
+f69be000-f69c8000 r-xp 00000000 b3:0d 1048                               /system/lib/libsoundtrigger.so
+f69c8000-f69c9000 ---p 00000000 00:00 0 
+f69c9000-f69cc000 r--p 0000a000 b3:0d 1048                               /system/lib/libsoundtrigger.so
+f69cc000-f69cd000 rw-p 0000d000 b3:0d 1048                               /system/lib/libsoundtrigger.so
+f69cd000-f69e5000 r-xp 00000000 b3:0d 1132                               /system/lib/libvorbisidec.so
+f69e5000-f69e6000 ---p 00000000 00:00 0 
+f69e6000-f69e7000 r--p 00018000 b3:0d 1132                               /system/lib/libvorbisidec.so
+f69e7000-f69e8000 rw-p 00019000 b3:0d 1132                               /system/lib/libvorbisidec.so
+f69e8000-f6a11000 r-xp 00000000 b3:0d 1101                               /system/lib/libstagefright_wfd.so
+f6a11000-f6a13000 r--p 00028000 b3:0d 1101                               /system/lib/libstagefright_wfd.so
+f6a13000-f6a14000 rw-p 0002a000 b3:0d 1101                               /system/lib/libstagefright_wfd.so
+f6a14000-f6a33000 r-xp 00000000 b3:0d 1064                               /system/lib/libstagefright_omx.so
+f6a33000-f6a34000 ---p 00000000 00:00 0 
+f6a34000-f6a36000 r--p 0001f000 b3:0d 1064                               /system/lib/libstagefright_omx.so
+f6a36000-f6a37000 rw-p 00021000 b3:0d 1064                               /system/lib/libstagefright_omx.so
+f6a37000-f6a51000 r-xp 00000000 b3:0d 1062                               /system/lib/libstagefright_httplive.so
+f6a51000-f6a52000 r--p 00019000 b3:0d 1062                               /system/lib/libstagefright_httplive.so
+f6a52000-f6a53000 rw-p 0001a000 b3:0d 1062                               /system/lib/libstagefright_httplive.so
+f6a53000-f6a54000 rw-p 00000000 00:00 0                                  [anon:linker_alloc]
+f6a54000-f6bbc000 r-xp 00000000 b3:0d 1056                               /system/lib/libstagefright.so
+f6bbc000-f6bbd000 ---p 00000000 00:00 0 
+f6bbd000-f6bc7000 r--p 00168000 b3:0d 1056                               /system/lib/libstagefright.so
+f6bc7000-f6bca000 rw-p 00172000 b3:0d 1056                               /system/lib/libstagefright.so
+f6bca000-f6be0000 r-xp 00000000 b3:0d 919                                /system/lib/libdrmframework.so
+f6be0000-f6be1000 ---p 00000000 00:00 0 
+f6be1000-f6be4000 r--p 00016000 b3:0d 919                                /system/lib/libdrmframework.so
+f6be4000-f6be5000 rw-p 00019000 b3:0d 919                                /system/lib/libdrmframework.so
+f6be5000-f6be6000 r--p 00000000 00:00 0                                  [anon:linker_alloc]
+f6be6000-f6cd3000 r-xp 00000000 b3:0d 910                                /system/lib/libcrypto.so
+f6cd3000-f6ce2000 r--p 000ec000 b3:0d 910                                /system/lib/libcrypto.so
+f6ce2000-f6ce8000 rw-p 000fb000 b3:0d 910                                /system/lib/libcrypto.so
+f6ce8000-f6cea000 rw-p 00000000 00:00 0 
+f6cea000-f6cfe000 r-xp 00000000 b3:0d 1060                               /system/lib/libstagefright_foundation.so
+f6cfe000-f6cff000 ---p 00000000 00:00 0 
+f6cff000-f6d00000 r--p 00014000 b3:0d 1060                               /system/lib/libstagefright_foundation.so
+f6d00000-f6d01000 rw-p 00015000 b3:0d 1060                               /system/lib/libstagefright_foundation.so
+f6d01000-f6d50000 r-xp 00000000 b3:0d 1046                               /system/lib/libsonivox.so
+f6d50000-f6d51000 r--p 0004e000 b3:0d 1046                               /system/lib/libsonivox.so
+f6d51000-f6d52000 rw-p 0004f000 b3:0d 1046                               /system/lib/libsonivox.so
+f6d52000-f6d57000 rw-p 00000000 00:00 0 
+f6d57000-f6e53000 r-xp 00000000 b3:0d 963                                /system/lib/libicuuc.so
+f6e53000-f6e5e000 r--p 000fb000 b3:0d 963                                /system/lib/libicuuc.so
+f6e5e000-f6e5f000 rw-p 00106000 b3:0d 963                                /system/lib/libicuuc.so
+f6e5f000-f6e63000 rw-p 00000000 00:00 0 
+f6e63000-f6fb1000 r-xp 00000000 b3:0d 962                                /system/lib/libicui18n.so
+f6fb1000-f6fb2000 ---p 00000000 00:00 0 
+f6fb2000-f6fbc000 r--p 0014e000 b3:0d 962                                /system/lib/libicui18n.so
+f6fbc000-f6fbd000 rw-p 00158000 b3:0d 962                                /system/lib/libicui18n.so
+f6fbd000-f6fd1000 r-xp 00000000 b3:0d 924                                /system/lib/libexpat.so
+f6fd1000-f6fd3000 r--p 00013000 b3:0d 924                                /system/lib/libexpat.so
+f6fd3000-f6fd4000 rw-p 00015000 b3:0d 924                                /system/lib/libexpat.so
+f6fd4000-f6fde000 r-xp 00000000 b3:0d 1125                               /system/lib/libui.so
+f6fde000-f6fdf000 r--p 00009000 b3:0d 1125                               /system/lib/libui.so
+f6fdf000-f6fe0000 rw-p 0000a000 b3:0d 1125                               /system/lib/libui.so
+f6fe0000-f6fe1000 r-xp 00000000 b3:0d 1119                               /system/lib/libsync.so
+f6fe1000-f6fe2000 r--p 00000000 b3:0d 1119                               /system/lib/libsync.so
+f6fe2000-f6fe3000 rw-p 00001000 b3:0d 1119                               /system/lib/libsync.so
+f6fe3000-f7013000 r-xp 00000000 b3:0d 984                                /system/lib/libjpeg.so
+f7013000-f7014000 r--p 0002f000 b3:0d 984                                /system/lib/libjpeg.so
+f7014000-f7015000 rw-p 00030000 b3:0d 984                                /system/lib/libjpeg.so
+f7015000-f7057000 r-xp 00000000 b3:0d 948                                /system/lib/libgui.so
+f7057000-f7063000 r--p 00041000 b3:0d 948                                /system/lib/libgui.so
+f7063000-f7064000 rw-p 0004d000 b3:0d 948                                /system/lib/libgui.so
+f7064000-f7093000 r-xp 00000000 b3:0d 901                                /system/lib/libcamera_client.so
+f7093000-f709d000 r--p 0002e000 b3:0d 901                                /system/lib/libcamera_client.so
+f709d000-f709e000 rw-p 00038000 b3:0d 901                                /system/lib/libcamera_client.so
+f709e000-f70a1000 r-xp 00000000 b3:0d 885                                /system/lib/libaudiopolicymanager.so
+f70a1000-f70a2000 r--p 00002000 b3:0d 885                                /system/lib/libaudiopolicymanager.so
+f70a2000-f70a3000 rw-p 00003000 b3:0d 885                                /system/lib/libaudiopolicymanager.so
+f70a3000-f70a4000 r--p 00000000 00:00 0                                  [anon:linker_alloc]
+f70a4000-f70a5000 r-xp 00000000 b3:0d 1042                               /system/lib/libserviceutility.so
+f70a5000-f70a6000 r--p 00000000 b3:0d 1042                               /system/lib/libserviceutility.so
+f70a6000-f70a7000 rw-p 00001000 b3:0d 1042                               /system/lib/libserviceutility.so
+f70a7000-f70a9000 r-xp 00000000 b3:0d 1025                               /system/lib/libpowermanager.so
+f70a9000-f70aa000 ---p 00000000 00:00 0 
+f70aa000-f70ab000 r--p 00002000 b3:0d 1025                               /system/lib/libpowermanager.so
+f70ab000-f70ac000 rw-p 00003000 b3:0d 1025                               /system/lib/libpowermanager.so
+f70ac000-f70b0000 r-xp 00000000 b3:0d 950                                /system/lib/libhardware_legacy.so
+f70b0000-f70b1000 ---p 00000000 00:00 0 
+f70b1000-f70b2000 r--p 00004000 b3:0d 950                                /system/lib/libhardware_legacy.so
+f70b2000-f70b3000 rw-p 00005000 b3:0d 950                                /system/lib/libhardware_legacy.so
+f70b3000-f70b4000 rw-p 00000000 00:00 0 
+f70b4000-f70b5000 r-xp 00000000 b3:0d 949                                /system/lib/libhardware.so
+f70b5000-f70b6000 r--p 00000000 b3:0d 949                                /system/lib/libhardware.so
+f70b6000-f70b7000 rw-p 00001000 b3:0d 949                                /system/lib/libhardware.so
+f70b7000-f70b9000 r-xp 00000000 b3:0d 921                                /system/lib/libeffects.so
+f70b9000-f70ba000 r--p 00001000 b3:0d 921                                /system/lib/libeffects.so
+f70ba000-f70bb000 rw-p 00002000 b3:0d 921                                /system/lib/libeffects.so
+f70bb000-f70c6000 r-xp 00000000 b3:0d 907                                /system/lib/libcommon_time_client.so
+f70c6000-f70c9000 r--p 0000a000 b3:0d 907                                /system/lib/libcommon_time_client.so
+f70c9000-f70ca000 rw-p 0000d000 b3:0d 907                                /system/lib/libcommon_time_client.so
+f70ca000-f70ce000 r-xp 00000000 b3:0d 890                                /system/lib/libaudioutils.so
+f70ce000-f70cf000 r--p 00003000 b3:0d 890                                /system/lib/libaudioutils.so
+f70cf000-f70d0000 rw-p 00004000 b3:0d 890                                /system/lib/libaudioutils.so
+f70d0000-f70d1000 r--p 00000000 00:00 0                                  [anon:linker_alloc]
+f70d1000-f70ed000 r-xp 00000000 b3:0d 888                                /system/lib/libaudioresampler.so
+f70ed000-f70ee000 ---p 00000000 00:00 0 
+f70ee000-f70ef000 r--p 0001c000 b3:0d 888                                /system/lib/libaudioresampler.so
+f70ef000-f70f0000 rw-p 0001d000 b3:0d 888                                /system/lib/libaudioresampler.so
+f70f0000-f7105000 r-xp 00000000 b3:0d 1129                               /system/lib/libutils.so
+f7105000-f7106000 ---p 00000000 00:00 0 
+f7106000-f7107000 r--p 00015000 b3:0d 1129                               /system/lib/libutils.so
+f7107000-f7108000 rw-p 00016000 b3:0d 1129                               /system/lib/libutils.so
+f7108000-f710a000 r-xp 00000000 b3:0d 1105                               /system/lib/libstdc++.so
+f710a000-f710b000 r--p 00001000 b3:0d 1105                               /system/lib/libstdc++.so
+f710b000-f710c000 rw-p 00002000 b3:0d 1105                               /system/lib/libstdc++.so
+f710c000-f7118000 r-xp 00000000 b3:0d 1049                               /system/lib/libsoundtriggerservice.so
+f7118000-f711a000 r--p 0000b000 b3:0d 1049                               /system/lib/libsoundtriggerservice.so
+f711a000-f711b000 rw-p 0000d000 b3:0d 1049                               /system/lib/libsoundtriggerservice.so
+f711b000-f7122000 r-xp 00000000 b3:0d 1003                               /system/lib/libnbaio.so
+f7122000-f7123000 ---p 00000000 00:00 0 
+f7123000-f7124000 r--p 00007000 b3:0d 1003                               /system/lib/libnbaio.so
+f7124000-f7125000 rw-p 00008000 b3:0d 1003                               /system/lib/libnbaio.so
+f7125000-f7126000 r--p 00000000 00:00 0                                  [anon:linker_alloc]
+f7126000-f71a6000 r-xp 00000000 b3:0d 997                                /system/lib/libmediaplayerservice.so
+f71a6000-f71a7000 ---p 00000000 00:00 0 
+f71a7000-f71af000 r--p 00080000 b3:0d 997                                /system/lib/libmediaplayerservice.so
+f71af000-f71b0000 rw-p 00088000 b3:0d 997                                /system/lib/libmediaplayerservice.so
+f71b0000-f71b4000 r-xp 00000000 b3:0d 995                                /system/lib/libmedialogservice.so
+f71b4000-f71b5000 r--p 00003000 b3:0d 995                                /system/lib/libmedialogservice.so
+f71b5000-f71b6000 rw-p 00004000 b3:0d 995                                /system/lib/libmedialogservice.so
+f71b6000-f7239000 r-xp 00000000 b3:0d 991                                /system/lib/libmedia.so
+f7239000-f7252000 r--p 00082000 b3:0d 991                                /system/lib/libmedia.so
+f7252000-f7253000 rw-p 0009b000 b3:0d 991                                /system/lib/libmedia.so
+f7253000-f726a000 r-xp 00000000 b3:0d 988                                /system/lib/libm.so
+f726a000-f726b000 r--p 00016000 b3:0d 988                                /system/lib/libm.so
+f726b000-f726c000 rw-p 00017000 b3:0d 988                                /system/lib/libm.so
+f726c000-f7271000 r-xp 00000000 b3:0d 986                                /system/lib/liblog.so
+f7271000-f7272000 r--p 00004000 b3:0d 986                                /system/lib/liblog.so
+f7272000-f7273000 rw-p 00005000 b3:0d 986                                /system/lib/liblog.so
+f7273000-f727e000 r-xp 00000000 b3:0d 912                                /system/lib/libcutils.so
+f727e000-f727f000 r--p 0000a000 b3:0d 912                                /system/lib/libcutils.so
+f727f000-f7280000 rw-p 0000b000 b3:0d 912                                /system/lib/libcutils.so
+f7280000-f7300000 r-xp 00000000 b3:0d 903                                /system/lib/libcameraservice.so
+f7300000-f730d000 r--p 0007f000 b3:0d 903                                /system/lib/libcameraservice.so
+f730d000-f730e000 rw-p 0008c000 b3:0d 903                                /system/lib/libcameraservice.so
+f730e000-f7314000 r-xp 00000000 b3:0d 902                                /system/lib/libcamera_metadata.so
+f7314000-f7315000 r--p 00005000 b3:0d 902                                /system/lib/libcamera_metadata.so
+f7315000-f7316000 rw-p 00006000 b3:0d 902                                /system/lib/libcamera_metadata.so
+f7316000-f736b000 r-xp 00000000 b3:0d 898                                /system/lib/libc.so
+f736b000-f736e000 r--p 00054000 b3:0d 898                                /system/lib/libc.so
+f736e000-f7371000 rw-p 00057000 b3:0d 898                                /system/lib/libc.so
+f7371000-f737a000 rw-p 00000000 00:00 0 
+f737a000-f73a1000 r-xp 00000000 b3:0d 896                                /system/lib/libbinder.so
+f73a1000-f73a2000 ---p 00000000 00:00 0 
+f73a2000-f73a9000 r--p 00027000 b3:0d 896                                /system/lib/libbinder.so
+f73a9000-f73aa000 rw-p 0002e000 b3:0d 896                                /system/lib/libbinder.so
+f73aa000-f73b6000 r-xp 00000000 b3:0d 887                                /system/lib/libaudiopolicyservice.so
+f73b6000-f73b8000 r--p 0000b000 b3:0d 887                                /system/lib/libaudiopolicyservice.so
+f73b8000-f73b9000 rw-p 0000d000 b3:0d 887                                /system/lib/libaudiopolicyservice.so
+f73b9000-f73f5000 r-xp 00000000 b3:0d 884                                /system/lib/libaudioflinger.so
+f73f5000-f73fb000 r--p 0003b000 b3:0d 884                                /system/lib/libaudioflinger.so
+f73fb000-f73fc000 rw-p 00041000 b3:0d 884                                /system/lib/libaudioflinger.so
+f73fc000-f73fd000 r--p 00000000 00:00 0                                  [anon:linker_alloc]
+f73fd000-f73fe000 rw-p 00000000 00:00 0                                  [anon:linker_alloc]
+f73fe000-f73ff000 r--p 00000000 00:00 0                                  [anon:linker_alloc]
+f73ff000-f7400000 r--p 00000000 00:00 0 
+f7400000-f7402000 rw-p 00000000 00:00 0 
+f7402000-f7410000 r-xp 00000000 b3:0d 250                                /system/bin/linker
+f7410000-f7411000 r--p 0000d000 b3:0d 250                                /system/bin/linker
+f7411000-f7412000 rw-p 0000e000 b3:0d 250                                /system/bin/linker
+f7412000-f7413000 rw-p 00000000 00:00 0 
+ffe5f000-ffe80000 rw-p 00000000 00:00 0                                  [stack]
+ffff0000-ffff1000 r-xp 00000000 00:00 0                                  [vectors]
