@@ -13,6 +13,7 @@ extern int optind;
 static struct mapinfo* g_mapinfo = NULL;
 static struct mem *g_mem = NULL;
 static struct result *g_res = NULL;
+#define ADDR2LINE "/usr/bin/addr2line"
 
 
 static void usage()
@@ -236,8 +237,9 @@ static void addr2line(char *root)
 
     struct result *res = g_res;
     int i = 0;
-    char pc[16], path[1024];
+    char cmd[512], line[512];
     int pid, status;
+    FILE *fp;
 
     while (res != NULL) {
         print_item(res);
@@ -245,21 +247,18 @@ static void addr2line(char *root)
             if (res->array[i].offset == 0)
                 break;
 
-            sprintf(pc, "%x", res->array[i].offset);
-            sprintf(path, "%s/%s", root, res->array[i].name);
+            sprintf(cmd, "%s %s %s/%s %08"PRIxPTR,
+                    ADDR2LINE, "-e", root, res->array[i].name, res->array[i].offset);
 
-            pid = fork();
-            if (pid == 0) {
-                int ret = execl("./addr2line", "./addr2line", "-e", path, pc, NULL);
-                _exit(ret);
-            } else if (pid < 0) {
-                printf(" some thing error\n");
-                exit(-1);
-            } else {
-                int wp_ret = waitpid(pid, &status, 0);
-                if (wp_ret < 0)
-                    err_msg("waitpid failed rc=%d, errno=%d\n", wp_ret, errno);
+            fp = popen(cmd, "r");
+            if (!fp) {
+                err_msg("failed to popen");
+                break;
             }
+            while (fgets(line, sizeof(line), fp))
+                printf("%s", line);
+            pclose(fp);
+
         }
 
         res = res->next;
