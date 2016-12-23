@@ -2,6 +2,7 @@
 #include "error.h"
 #include <inttypes.h>
 #include <unistd.h>
+#include <errno.h>
 
 /*
  * in <unistd.h> for getopt_long
@@ -22,7 +23,7 @@ static void usage()
         "\t      -m maps file\n"
         "\t      -d diff file\n"
         "\t      -r root directory\n"
-        "\t      -a has addr2line cmd\n"
+        "\t      -a has addr2line cmd, should set -r\n"
         "\t      -h show help\n"
         "\n");
 }
@@ -37,7 +38,10 @@ static void help()
         "\t -r: root directory \n"
         "\t -a: has addr2line, default is disabled\n"
         "\t example:  \n"
-        "\t\t\t./tt -m maps -d diff -r /mnt/fileroot/baocheng.sun/lollipop/out/target/product/p200/symbols/\n"
+        "\t\t if has addr2line\n"
+        "\t\t\t./tt -a -m maps -d diff -r /mnt/fileroot/baocheng.sun/lollipop/out/target/product/p200/symbols/\n"
+        "\t\t else\n"
+        "\t\t\t./tt -m maps -d diff\n"
         "\t -v: print the version and exit()\n");
 }
 
@@ -233,7 +237,7 @@ static void addr2line(char *root)
     struct result *res = g_res;
     int i = 0;
     char pc[16], path[1024];
-    int pid;
+    int pid, status;
 
     while (res != NULL) {
         print_item(res);
@@ -246,13 +250,16 @@ static void addr2line(char *root)
 
             pid = fork();
             if (pid == 0) {
-                execl("./addr2line", "./addr2line", "-e", path, pc, NULL);
+                int ret = execl("./addr2line", "./addr2line", "-e", path, pc, NULL);
+                _exit(ret);
             } else if (pid < 0) {
                 printf(" some thing error\n");
+                exit(-1);
             } else {
-                wait(0);
+                int wp_ret = waitpid(pid, &status, 0);
+                if (wp_ret < 0)
+                    err_msg("waitpid failed rc=%d, errno=%d\n", wp_ret, errno);
             }
-
         }
 
         res = res->next;
@@ -355,7 +362,7 @@ int main(int argc, char *argv[])
         usage();
         exit(-1);
     } else {
-        while ((c=getopt_long(argc, argv, "a:d:m:r:h", long_opts, &index)) != EOF) {
+        while ((c=getopt_long(argc, argv, "ad:m:r:h", long_opts, &index)) != EOF) {
             switch (c) {
             case 'm':    /* -m */
                 maps_file = strdup(optarg);
@@ -384,10 +391,14 @@ int main(int argc, char *argv[])
 
     //print_result();
 
-    if (has_addr2line)
+    if (has_addr2line) {
+        if (root == NULL) {
+            err_quit("root directory should not be null");
+        }
         addr2line(root);
-    else
+    } else {
         print_result();
+    }
 
     cleanup();
     return 0;
